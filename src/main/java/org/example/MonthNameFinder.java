@@ -12,12 +12,14 @@ public class MonthNameFinder
 {
     static Scanner scanner = new Scanner(System.in);
 
-    public int getNumberOfMonthInput() {
+    public int getNumberOfMonthInput()
+    {
         System.out.print("Please enter the number of the month: ");
         return scanner.nextInt();
     }
 
-    public void displayMonthNameMessage(int numberOfMonth){
+    public void displayMonthNameMessage(int numberOfMonth)
+    {
         String nameOfTheMonth = determineMonth(numberOfMonth);
         System.out.print(MessageFormat.format("The name of the month is {0}.", nameOfTheMonth));
     }
